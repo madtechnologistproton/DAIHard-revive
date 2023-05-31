@@ -78554,7 +78554,7 @@ var $author$project$View$pageElementAndModal = F2(
 								$mdgriffith$elm_ui$Element$padding(
 								A3($author$project$CommonTypes$changeForMobile, 10, dProfile, 20))
 							]),
-						$mdgriffith$elm_ui$Element$text('Thank you for clicking!'))
+						$mdgriffith$elm_ui$Element$text(''))
 					])),
 			_Utils_ap(
 				modalEls,
@@ -78567,10 +78567,6 @@ var $author$project$View$root = function (model) {
 		body: _List_fromArray(
 			[
 				function () {
-				var bottomDivElement = _List_fromArray(
-					[
-						$mdgriffith$elm_ui$Element$text('Bottom div content')
-					]);
 				var _v0 = A2($author$project$View$pageElementAndModal, model.dProfile, model);
 				var pageEl = _v0.a;
 				var modalEls = _v0.b;

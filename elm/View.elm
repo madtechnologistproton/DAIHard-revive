@@ -24,7 +24,8 @@ import Trade.View
 import Types exposing (..)
 import UserNotice as UN exposing (UserNotice)
 import Wallet
-
+import Html.Attributes exposing (attribute, class, id)
+import Html exposing (Html, div, text)
 
 root : Model -> Browser.Document Msg
 root model =
@@ -101,8 +102,16 @@ pageElementAndModal dProfile model =
             [ Element.height (Element.px (60 |> changeForMobile 110 dProfile)) ]
             Element.none
         , maybeTestnetIndicator
-        , submodelEl
+        , submodelEl, 
+            Element.el
+                [   
+                Element.width Element.fill
+                , Element.padding (20 |> changeForMobile 10 dProfile)
+                ]
+                <|
+                   Element.text ""
         ]
+    
     , modalEls ++ userNoticeEls dProfile model.userNotices
     )
 
@@ -206,13 +215,13 @@ headerContent dProfile model =
                     , Element.alignRight
                     ]
                   <|
-                    headerExternalLink dProfile "Reddit" "https://reddit.com/r/DAIHard"
+                    headerExternalLink dProfile "Twitter" "https://twitter.com/exitandutility"
                 , Element.el
                     [ Element.centerY
                     , Element.alignRight
                     ]
                   <|
-                    headerExternalLink dProfile "Telegram" "https://t.me/daihardexchange_group"
+                    headerExternalLink dProfile "Discord" "https://discord.com/invite/n9UwhssUuh"
                 ]
           in
           case dProfile of
