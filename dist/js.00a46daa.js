@@ -62326,19 +62326,15 @@ var $author$project$View$lowUsageParagraphsEl = A2(
 			[
 				_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('DAIHard is suffering from very low usage at the moment. We started to worry that a successful DAIHard would make some scary enemies, and pumped the brakes before marketing. As a result, the tool is still functional, but it might be hard to find other users.')
+					$mdgriffith$elm_ui$Element$text('We at Exit & Utility loved the DAI Hard concept and were surprised to see it dropped. So we decided to redeploy the front end. We plan on updating it in the future because things have moved on since DAI Hard was originally launched.')
 				]),
 				_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$text('We\'re currently working on '),
-					A2($author$project$View$link, 'Foundry, a DAO designed to be unbullyable', 'https://foundrydao.com/'),
-					$mdgriffith$elm_ui$Element$text('. This DAO should be able to market DAIHard and pursue other projects without fear, and generally advance the libertarian cause without asking permission. DAIHard already points its 1% fee as profit to the Foundry Treasury.')
-				]),
-				_List_fromArray(
-				[
-					$mdgriffith$elm_ui$Element$text('Please reach out to us on the '),
-					A2($author$project$View$link, 'Foundry Telegram', 'https://t.me/FoundryCommunity'),
-					$mdgriffith$elm_ui$Element$text('! We might be able to get your DAIHard trade offer some visibility with some kind of PR stunt.')
+					$mdgriffith$elm_ui$Element$text('To learn more about Exit & Utility, check out '),
+					A2($author$project$View$link, 'exitandutility.eth', 'https://exitandutility.eth.limo/'),
+					$mdgriffith$elm_ui$Element$text(' and join our '),
+					A2($author$project$View$link, 'Discord', 'https://discord.com/invite/n9UwhssUuh'),
+					$mdgriffith$elm_ui$Element$text(' group.')
 				])
 			])));
 var $elm$virtual_dom$VirtualDom$MayStopPropagation = function (a) {
@@ -62457,7 +62453,7 @@ var $author$project$View$lowUsageModal = function (dProfile) {
 							$mdgriffith$elm_ui$Element$Font$size(
 							A3($author$project$CommonTypes$changeForMobile, 28, dProfile, 36))
 						]),
-					$mdgriffith$elm_ui$Element$text('DAIHard is a little quiet right now...')),
+					$mdgriffith$elm_ui$Element$text('DAI Hard is back')),
 					$author$project$View$lowUsageParagraphsEl,
 					A4(
 					$author$project$Helpers$Element$blueButton,
@@ -79938,7 +79934,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51197" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54846" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

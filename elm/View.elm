@@ -565,7 +565,7 @@ lowUsageModal dProfile =
                 [ Element.centerX
                 , Element.Font.size (36 |> changeForMobile 28 dProfile)
                 ]
-                (Element.text "DAIHard is a little quiet right now...")
+                (Element.text "DAI Hard is back")
             , lowUsageParagraphsEl
             , EH.blueButton dProfile
                 [ Element.centerX ]
@@ -586,14 +586,13 @@ lowUsageParagraphsEl =
             (Element.paragraph
                 [ Element.spacing 0 ]
             )
-            [ [ Element.text "DAIHard is suffering from very low usage at the moment. We started to worry that a successful DAIHard would make some scary enemies, and pumped the brakes before marketing. As a result, the tool is still functional, but it might be hard to find other users." ]
-            , [ Element.text "We're currently working on "
-              , link "Foundry, a DAO designed to be unbullyable" "https://foundrydao.com/"
-              , Element.text ". This DAO should be able to market DAIHard and pursue other projects without fear, and generally advance the libertarian cause without asking permission. DAIHard already points its 1% fee as profit to the Foundry Treasury."
+            [ [ Element.text "We at Exit & Utility loved the DAI Hard concept and were surprised to see it dropped. So we decided to redeploy the front end. We plan on updating it in the future because things have moved on since DAI Hard was originally launched." ]
+            , [ Element.text "To learn more about Exit & Utility, check out "
+              , link "exitandutility.eth" "https://exitandutility.eth.limo/"
+              ,Element.text " and join our "
+              , link "Discord" "https://discord.com/invite/n9UwhssUuh"
+              ,Element.text " group."
               ]
-            , [ Element.text "Please reach out to us on the "
-              , link "Foundry Telegram" "https://t.me/FoundryCommunity"
-              ,Element.text "! We might be able to get your DAIHard trade offer some visibility with some kind of PR stunt." ]
             ]
 
 
