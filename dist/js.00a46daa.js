@@ -62064,12 +62064,12 @@ var $author$project$View$headerContent = F2(
 							$mdgriffith$elm_ui$Element$el,
 							_List_fromArray(
 								[$mdgriffith$elm_ui$Element$centerY, $mdgriffith$elm_ui$Element$alignRight]),
-							A3($author$project$View$headerExternalLink, dProfile, 'Reddit', 'https://reddit.com/r/DAIHard')),
+							A3($author$project$View$headerExternalLink, dProfile, 'Twitter', 'https://twitter.com/exitandutility')),
 							A2(
 							$mdgriffith$elm_ui$Element$el,
 							_List_fromArray(
 								[$mdgriffith$elm_ui$Element$centerY, $mdgriffith$elm_ui$Element$alignRight]),
-							A3($author$project$View$headerExternalLink, dProfile, 'Telegram', 'https://t.me/daihardexchange_group'))
+							A3($author$project$View$headerExternalLink, dProfile, 'Discord', 'https://discord.com/invite/n9UwhssUuh'))
 						]);
 					if (dProfile.$ === 'Desktop') {
 						return A2(
@@ -78545,7 +78545,16 @@ var $author$project$View$pageElementAndModal = F2(
 							]),
 						$mdgriffith$elm_ui$Element$none),
 						maybeTestnetIndicator,
-						submodelEl
+						submodelEl,
+						A2(
+						$mdgriffith$elm_ui$Element$el,
+						_List_fromArray(
+							[
+								$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill),
+								$mdgriffith$elm_ui$Element$padding(
+								A3($author$project$CommonTypes$changeForMobile, 10, dProfile, 20))
+							]),
+						$mdgriffith$elm_ui$Element$text('Thank you for clicking!'))
 					])),
 			_Utils_ap(
 				modalEls,
@@ -78558,6 +78567,10 @@ var $author$project$View$root = function (model) {
 		body: _List_fromArray(
 			[
 				function () {
+				var bottomDivElement = _List_fromArray(
+					[
+						$mdgriffith$elm_ui$Element$text('Bottom div content')
+					]);
 				var _v0 = A2($author$project$View$pageElementAndModal, model.dProfile, model);
 				var pageEl = _v0.a;
 				var modalEls = _v0.b;
@@ -79929,7 +79942,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50372" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51197" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
